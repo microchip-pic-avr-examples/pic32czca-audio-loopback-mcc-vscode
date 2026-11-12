@@ -1,0 +1,73 @@
+{
+    "metaDataVersion": "1.0.0",
+    "category": "com.microchip.ide.project",
+    "content": {
+        "metaDataVersion": "1.3.0",
+        "name": "com.microchip.mcu.vscode.project.pic32czca-audio-loopback-mcc-vscode",
+        "version": "1.0.0",
+        "displayName": "Real-Time Audio Loopback Using the Arm® Cortex®-M7 Based PIC32CZ CA80 Microcontroller",
+        "projectName": "pic32czca-audio-loopback-mcc-vscode",
+        "shortDescription": "This example showcases real-time audio streaming on the PIC32CZ CA80 Curiosity Ultra board using the WM8904 audio codec. The application implements a bidirectional audio loopback that captures microphone input and routes it to headphone output.",
+        "ide": [
+            {
+                "name": "MPLAB-VSCODE",
+                "semverRange": ">=1.2.8"
+            }
+        ],
+        "compiler": [
+            {
+                "name": "XC32",
+                "semverRange": "^6.0.0"
+            }
+        ],
+        "dfp": {
+            "name": "PIC32CZ-CA80_DFP",
+            "semverRange": "^1.7.219"
+        },
+        "configurator": {
+            "name": "MCC",
+            "semverRange": "^5.7.1"
+        },
+        "device": [
+            {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.portal.contentRef",
+                "content": {
+                    "metaDataVersion": "1.0.0",
+                    "category": "com.microchip.device",
+                    "name": "PIC32CZ8110CA80208",
+                    "versionRange": "*"
+                }
+            }
+        ],
+        "author": "Hariharan Arumugam",
+        "peripherals": [
+            "SPI_IXS",
+            "DMA",
+            "SERCOM",
+            "TCC",
+            "GPIO"
+        ],
+        "keywords": [
+            "Harmony",
+            "MCC",
+            "Curiosity Ultra",
+            "Audio",
+            "I2S",
+            "WM8904",
+            "Loopback",
+            "VS Code"
+        ],
+        "additionalData": {
+            "longDescription": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.portal.fileRef",
+                "content": {
+                    "metaDataVersion": "1.0.0",
+                    "fileName": "./README.md",
+                    "mimeType": "text/markdown"
+                }
+            }
+        }
+    }
+}

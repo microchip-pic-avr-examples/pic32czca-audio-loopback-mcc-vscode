@@ -1,0 +1,527 @@
+configVersion: 1.0.0
+componentName: mainBoard_PIC32CZ_CA80_CURIOSITY_ULTRA
+coreVersion: 5.9.1
+device: PIC32CZ8110CA80208
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: mainBoard_PIC32CZ_CA80_CURIOSITY_ULTRA
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: shd
+  type: package
+  version: v1.4.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: mainBoard_PIC32CZ_CA80_CURIOSITY_ULTRA
+          x: '338'
+          y: '11'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    SHD_CHECK_COLLISIONS:
+      attributes:
+        id: SHD_CHECK_COLLISIONS
+        label: SHD_MAINBOARD_INTERFACE_0_OPT_1
+      children:
+      - children:
+        - attributes:
+            id: label
+          children:
+          - type: Value
+            value: SHD_MAINBOARD_INTERFACE_0_OPT_1
+          type: String
+        type: Attributes
+      - children:
+        - attributes:
+            id: mainBoard_PIC32CZ_CA80_CURIOSITY_ULTRA
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1
+        label: Extension Header EXT1
+      type: Combo
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_ADC MINUS:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_ADC MINUS
+        label: ADC MINUS
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_ADC PLUS:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_ADC PLUS
+        label: ADC PLUS
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_GPIO SS:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_GPIO SS
+        label: GPIO SS
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_GPIO1:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_GPIO1
+        label: GPIO1
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_GPIO2:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_GPIO2
+        label: GPIO2
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_I2C:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_I2C
+        label: I2C
+      children:
+      - children:
+        - attributes:
+            id: readOnly
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_IRQ:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_IRQ
+        label: IRQ
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_PWM MINUS:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_PWM MINUS
+        label: PWM MINUS
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_PWM PLUS:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_PWM PLUS
+        label: PWM PLUS
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_SPI:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_SPI
+        label: SPI
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_SPI_PC10_CSASGPIO:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_SPI_PC10_CSASGPIO
+        label: Drive CS signal as GPIO
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_UART:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT1_UART
+        label: UART
+      children:
+      - children:
+        - attributes:
+            id: readOnly
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2
+        label: Extension Header EXT2
+      type: Combo
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_ADC MINUS:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_ADC MINUS
+        label: ADC MINUS
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_ADC PLUS:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_ADC PLUS
+        label: ADC PLUS
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_GPIO SS:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_GPIO SS
+        label: GPIO SS
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_GPIO1:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_GPIO1
+        label: GPIO1
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_GPIO2:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_GPIO2
+        label: GPIO2
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_I2C:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_I2C
+        label: I2C
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_IRQ:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_IRQ
+        label: IRQ
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_PWM MINUS:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_PWM MINUS
+        label: PWM MINUS
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_PWM PLUS:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_PWM PLUS
+        label: PWM PLUS
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_SPI:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_SPI
+        label: SPI
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_SPI_PC14_CSASGPIO:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_SPI_PC14_CSASGPIO
+        label: Drive CS signal as GPIO
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_UART:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_Extension-Header-EXT2_UART
+        label: UART
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_mikroBUS-Header:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_mikroBUS-Header
+        label: mikroBUS Header
+      type: Combo
+    SHD_MAINBOARD_CONNECTOR_mikroBUS-Header_AN:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_mikroBUS-Header_AN
+        label: AN
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_mikroBUS-Header_I2C:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_mikroBUS-Header_I2C
+        label: I2C
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_mikroBUS-Header_INT:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_mikroBUS-Header_INT
+        label: INT
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_mikroBUS-Header_PWM:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_mikroBUS-Header_PWM
+        label: PWM
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_mikroBUS-Header_RST:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_mikroBUS-Header_RST
+        label: RST
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_mikroBUS-Header_SPI:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_mikroBUS-Header_SPI
+        label: SPI
+      type: Boolean
+    SHD_MAINBOARD_CONNECTOR_mikroBUS-Header_UART:
+      attributes:
+        id: SHD_MAINBOARD_CONNECTOR_mikroBUS-Header_UART
+        label: UART
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_0_OPT_0:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_0_OPT_0
+        label: User LED 0
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_0_OPT_1:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_0_OPT_1
+        label: User LED 1
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_0_OPT_2:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_0_OPT_2
+        label: User Switch 0
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_0_OPT_3:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_0_OPT_3
+        label: User Switch 1
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_1_OPT_0:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_1_OPT_0
+        label: SST26VF032B interface
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_1_OPT_1:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_1_OPT_1
+        label: AT24MAC402 interface
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_1_OPT_2:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_1_OPT_2
+        label: SDCARD interface
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_2_OPT_0:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_2_OPT_0
+        label: CAN3 Interface
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_2_OPT_1:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_2_OPT_1
+        label: CAN4 Interface
+      children:
+      - children:
+        - attributes:
+            id: readOnly
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_3_OPT_0:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_3_OPT_0
+        label: ATECC608A
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_4_OPT_0:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_4_OPT_0
+        label: USART interface
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_4_OPT_1:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_4_OPT_1
+        label: I2C interface
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_4_OPT_2:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_4_OPT_2
+        label: I2S interface
+      children:
+      - children:
+        - attributes:
+            id: readOnly
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_4_OPT_3:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_4_OPT_3
+        label: I2S interface
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_4_OPT_4:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_4_OPT_4
+        label: X32 StandBy / Reset
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_4_OPT_5:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_4_OPT_5
+        label: ADC Channel
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_0:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_0
+        label: Parallel Data Interface
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_1:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_1
+        label: IRQ LCD Touch
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_10:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_10
+        label: GPIO 2
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_11:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_11
+        label: GPIO 3
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_12:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_12
+        label: STBYRST
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_13:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_13
+        label: ADC0
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_14:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_14
+        label: ADC1
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_15:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_15
+        label: ADC2
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_16:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_16
+        label: ADC3
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_17:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_17
+        label: ADC4
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_18:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_18
+        label: ADC5
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_19:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_19
+        label: ADC6
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_2:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_2
+        label: IRQ Q Touch
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_20:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_20
+        label: ADC7
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_3:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_3
+        label: IRQ Display Control
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_4:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_4
+        label: IRQ Q Touch
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_5:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_5
+        label: Touch I2C interface
+      children:
+      - children:
+        - attributes:
+            id: readOnly
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_6:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_6
+        label: SPI interface
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_7:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_7
+        label: LCD PWM interface
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_8:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_8
+        label: GFX PWM interface
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_5_OPT_9:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_5_OPT_9
+        label: GPIO 1
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_6_OPT_0:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_6_OPT_0
+        label: Ethernet Media Access Controller interface
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_7_OPT_0:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_7_OPT_0
+        label: USB0 VBUS Enable
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_7_OPT_1:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_7_OPT_1
+        label: USB0 VBUS Fault
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_7_OPT_2:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_7_OPT_2
+        label: USB1 VBUS Enable
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_7_OPT_3:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_7_OPT_3
+        label: USB1 VBUS Fault
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_7_OPT_4:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_7_OPT_4
+        label: USB1 DRD
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_7_OPT_5:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_7_OPT_5
+        label: USB1 CC
+      type: Boolean
+    SHD_MAINBOARD_INTERFACE_8_OPT_0:
+      attributes:
+        id: SHD_MAINBOARD_INTERFACE_8_OPT_0
+        label: Virtual COM Port interface
+      children:
+      - children:
+        - attributes:
+            id: readOnly
+          children:
+          - type: Value
+            value: 'false'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    SHD_MAINBOARD_NAME:
+      attributes:
+        id: SHD_MAINBOARD_NAME
+        label: Board Name
+      type: String
+    SHD_MAINBOARD_PIO_PERIPH:
+      attributes:
+        id: SHD_MAINBOARD_PIO_PERIPH
+        label: PIO Peripheral
+      type: String
+  userData: {}

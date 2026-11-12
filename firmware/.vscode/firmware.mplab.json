@@ -1,0 +1,98 @@
+{
+    "version": "1.9",
+    "configurations": [
+        {
+            "name": "default",
+            "id": "conf1",
+            "device": "PIC32CZ8110CA80208",
+            "imagePath": "./out/firmware/default.elf",
+            "tool": "Curiosity/Starter Kits (PKOB4)",
+            "packs": [
+                {
+                    "name": "PIC32CZ-CA80_DFP",
+                    "vendor": "Microchip",
+                    "version": "1.7.219"
+                },
+                {
+                    "name": "CMSIS",
+                    "vendor": "ARM",
+                    "version": "6.3.0"
+                }
+            ],
+            "fileSet": "default",
+            "toolchain": "default-XC32"
+        }
+    ],
+    "propertyGroups": [
+        {
+            "name": "default-XC32",
+            "type": "toolchain",
+            "provider": "microchip.toolchains:xc32@6.00",
+            "properties": {
+                "linker.preprocessor-macros": [
+                    "VECTOR_REGION=boot_rom"
+                ],
+                "linker.heap-size": "512",
+                "compiler.extra-include-directories": [
+                    "config.mcc/src",
+                    "config.mcc/src/config/default",
+                    "config.mcc/src/packs/CMSIS",
+                    "config.mcc/src/packs/CMSIS/CMSIS/Core/Include",
+                    "config.mcc/src/packs/PIC32CZ8110CA80208_DFP"
+                ],
+                "compiler++.extra-include-directories": [
+                    "config.mcc/src",
+                    "config.mcc/src/config/default",
+                    "config.mcc/src/packs/CMSIS",
+                    "config.mcc/src/packs/CMSIS/CMSIS/Core/Include",
+                    "config.mcc/src/packs/PIC32CZ8110CA80208_DFP"
+                ],
+                "linker.no-device-startup-code": "true",
+                "C32Global.mstacktcm": "false",
+                "compiler.isolate-each-function": "true",
+                "compiler.place-data-into-section": "true",
+                "linker.remove-unused-sections": "true",
+                "compiler++.isolate-each-function": "true",
+                "compiler++.optimization-level": "-O1",
+                "compiler.optimization-level": "-O1"
+            }
+        }
+    ],
+    "fileSets": [
+        {
+            "name": "default",
+            "files": [
+                {
+                    "include": "**/*",
+                    "exclude": "**/@(build|_build|out|cmake|.vscode)/**/*"
+                },
+                "config.mcc/src/config/default/peripheral/sercom/i2c_master/plib_sercom3_i2c_master.c",
+                "config.mcc/src/config/default/bsp/bsp.c",
+                "config.mcc/src/config/default/peripheral/evsys/plib_evsys.c",
+                "config.mcc/src/main.c",
+                "config.mcc/src/config/default/initialization.c",
+                "config.mcc/src/config/default/interrupts.c",
+                "config.mcc/src/config/default/exceptions.c",
+                "config.mcc/src/config/default/PIC32CZ8110CA80208.ld",
+                "config.mcc/src/config/default/stdio/xc32_monitor.c",
+                "config.mcc/src/config/default/peripheral/port/plib_port.c",
+                "config.mcc/src/config/default/peripheral/clock/plib_clock.c",
+                "config.mcc/src/config/default/peripheral/nvic/plib_nvic.c",
+                "config.mcc/src/config/default/peripheral/dma/plib_dma.c",
+                "config.mcc/src/config/default/startup_xc32.c",
+                "config.mcc/src/config/default/libc_syscalls.c",
+                "config.mcc/src/config/default/system/int/src/sys_int.c",
+                "config.mcc/src/config/default/system/cache/sys_cache.c",
+                "config.mcc/src/app_audio.c",
+                "config.mcc/src/config/default/tasks.c",
+                "config.mcc/src/config/default/driver/i2c/src/drv_i2c.c",
+                "config.mcc/src/config/default/peripheral/tcc/plib_tcc0.c",
+                "config.mcc/src/config/default/system/time/src/sys_time.c",
+                "config.mcc/src/config/default/peripheral/sercom/usart/plib_sercom1_usart.c",
+                "config.mcc/src/config/default/system/debug/src/sys_debug.c",
+                "config.mcc/src/config/default/system/console/src/sys_console.c",
+                "config.mcc/src/config/default/system/console/src/sys_console_uart.c"
+            ]
+        }
+    ]
+}
